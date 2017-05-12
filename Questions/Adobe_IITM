@@ -1,0 +1,21 @@
+Given is an array with values only 1, 2, 3 or 4. You can switch any particular value from among these values (1, 2, 3, 4). You need to find the minimum number of switches such that no 2 consecutive values in new array are same. Example: 4, 1 1 1 1 Ans: 2. Ex: 6, 2 2 2 3 3 3 Ans: 2.
+
+
+You are a musician who plays different songs at different volumes. You have a particular  difference that needs to be present for new song, but you don't care if it is more or less. You are given initial volume l, array of volume changes where arr[i] is volume change required after i-th song, max_vol h (min vol always 0), array size n. You need to find the max possible volume for the last song. But if at any point change is not possible, return -1. Format: n, arr[n], l, h. Ex: 3, 1 1 1, 0, 5. Ans: 3. Ex: 4, 9 1 5 4, 8, 15. Ans: -1. Ex: 3, 5 3 7, 5, 10. Ans: 10.
+	Approaches ???
+		Backtracking is one possible approach that comes to mind.
+
+	Anybody ,please tell the efficient approach of this problem. 
+	Input Constraints??? What is constraint on n?
+	Input explanation :
+Yes, first number = size of array, 
+then next ‘n’ numbers of array.
+Then ‘l’ means initial volume
+Then ‘h’ means max volume.
+Eg.    3, 1 1 1, 0, 5   means n = 3, arr = {1,1,1},  l = 0, h = 5,
+Output explanation: initially you play music at vol 0, then for first arr ele. Arr[0] inc. by 1,
+Arr[1] inc. by 1, arr[2] inc by 1 total = 3, answer !!           
+	
+ 
+You are a string conscious guy. You categorise strings into 3 types: good, bad, mixed. If a string has 3 consecutive vowels or 5 consecutive consonants or both, it is bad. Else it is good. If a string has ‘?’, that can be replaced with any character. Thus, string ‘?aa’ can be bad if ‘?’ is vowel or good if consonant. Thus, it is mixed. Implement function which takes string s as input and returns good, bad or mixed.
+
